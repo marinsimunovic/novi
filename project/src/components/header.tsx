@@ -2,7 +2,11 @@ const Header = () => {
   return (
     <>
       <div className="header">
-        <h1>HeLlO</h1>
+        <nav className="navigaion">
+          <a href="">home</a>
+          <a href="">about</a>
+          <a href="">contact</a>
+        </nav>
       </div>
     </>
   );
