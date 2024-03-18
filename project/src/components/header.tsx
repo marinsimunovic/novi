@@ -1,15 +1,14 @@
+import { navigationData } from "../data/nav";
+import Navigation from "./navigation";
+
 const Header = () => {
   return (
-    <>
-      <div className="header">
-        <nav className="navigaion">
-          <a href="">home</a>
-          <a href="">about</a>
-          <a href="">contact</a>
-        </nav>
-      </div>
-    </>
+    <div className="header__wrapper">
+      <header className="header">
+        <img className="header__logo" src={logoImg} alt="Hamburger logo" />
+        <Navigation links={navigationData} />
+      </header>
+    </div>
   );
 };
-
 export default Header;
