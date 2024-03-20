@@ -8,7 +8,7 @@ const Navigation = ({ links }: Props) => {
     <nav className="nav">
       {links.map((link) => {
         return (
-          <a className="nav__item" href={link.href}>
+          <a key={link.href} className="nav__item" href={link.href}>
             {link.label}
           </a>
         );
